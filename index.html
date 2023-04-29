@@ -9,12 +9,12 @@
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
     <script class="u-script" type="text/javascript" src="authentication.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="feed-generation.js" defer=""></script>
-    <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
+    
+    <meta name="generator" content="Nicepage 5.9.6, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
     
     
     
@@ -28,12 +28,12 @@
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
-  </head>
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-a6fb"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="516" data-image-height="138">
+        <a href="" class="u-image u-logo u-image-1" data-image-width="516" data-image-height="138">
           <img src="images/Screenshot2023-04-22at8.28.22PM.png" class="u-logo-image u-logo-image-1">
         </a>
-        <form action="#" method="get" class="u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
+        <!-- <form action="#" method="get" class="u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
           <button class="u-search-button" type="submit">
             <span class="u-search-icon u-spacing-10">
               <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-fd5e"></use></svg>
@@ -41,20 +41,19 @@
             </span>
           </button>
           <input class="u-search-input" type="search" name="search" value="" placeholder="Search">
-        </form>
+        </form> -->
       </div></header>
-    <script src="authentication.js"></script>
     <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-mobile-num1">
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-default u-image-1" src="images/Screenshot2023-04-22at8.32.46PM.png" alt="" data-image-width="880" data-image-height="716">
         <div class="u-form u-form-1">
-          <form onsubmit="return switch_mobile2otp()"  class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form" style="padding: 44px;" source="email">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-5 u-form-vertical u-inner-form" style="padding: 46px;" source="email" onsubmit="return switch_mobile2otp()">
             <div class="u-form-group u-form-phone u-label-top">
               <label for="name-558c" class="u-label u-label-1">Mobile Number:</label>
-              <input type="tel" placeholder="Enter Mobile Number" id="name-558c" name="mobile_number" class="u-border-1 u-border-white u-input u-input-rectangle u-text-white u-input-1" required="required">
+              <input type="tel" placeholder="Enter Mobile Number" id="name-558c" name="mobile_number" class="u-border-white u-input u-input-rectangle u-text-body-color u-input-1" required="required">
             </div>
             <div class="u-align-center u-form-group u-form-submit u-label-top">
-              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style">Sign In</a>
+              <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-10 u-text-custom-color-4 u-btn-1">Sign In</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -71,13 +70,13 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-default u-image-1" src="images/Screenshot2023-04-22at8.32.46PM.png" alt="" data-image-width="880" data-image-height="716">
         <div class="u-form u-form-1">
-          <form onsubmit="return otp2feed()" class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form" style="padding: 44px;" source="email">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-5 u-form-vertical u-inner-form" style="padding: 46px;" source="email" onsubmit="return otp_check()" >
             <div class="u-form-group u-label-top">
               <label for="email-558c" class="u-label u-label-1">Enter OTP:</label>
-              <input type="text" placeholder="Enter OTP" id="email-558c" name="password" class="u-border-1 u-border-white u-input u-input-rectangle u-text-white u-input-1" required="required">
+              <input type="text" placeholder="Enter OTP" id="email-558c" name="password" class="u-border-white u-input u-input-rectangle u-text-body-color u-input-1" required="required">
             </div>
-            <div class="u-align-center u-form-group u-form-submit u-label-top">
-              <a href="#" class="u-border-none u-btn u-btn-submit u-button-style">Sign In</a>
+            <div class="u-form-group u-form-submit u-label-top">
+              <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-10 u-text-custom-color-4 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Proceed</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -86,16 +85,26 @@
             <input type="hidden" name="formServices" value="751ff468d158b399a3f44a99f593d8b7">
           </form>
         </div>
-        <h6 class="u-text u-text-default u-text-1">Not a registered user, <a href="Register.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Click Here</a>
-        </h6>
       </div>
     </section>
     <section class="u-clearfix u-custom-color-1 u-section-3" id="sec-2c8f">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
-    <section class="u-clearfix u-custom-color-1 u-section-4" id="carousel_aff5">
-      <div class="u-clearfix u-sheet u-sheet-1"></div>
-    </section>
-        
+    
+    
+    <!-- <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-dfc7"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-design" target="_blank">
+        <span>Website Design</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Builder</span>
+      </a>. 
+    </section> -->
   
 </body></html>

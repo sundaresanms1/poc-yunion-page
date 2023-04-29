@@ -1,4 +1,4 @@
-.u-section-1 {
+ .u-section-1 {
   background-image: none;
 }
 
@@ -560,7 +560,6 @@
     margin-left: 0;
   }
 
-
   .u-section-6 .u-image-1 {
     margin-top: 8px;
     margin-left: 300px;
@@ -626,7 +625,6 @@
   .u-section-6 .u-list-1 {
     width: 720px;
   }
-
 
   .u-section-6 .u-image-1 {
     margin-top: 15px;
@@ -1087,11 +1085,3 @@
     width: 340px;
   }
 }
-
-/* .u-list-item:active {
-  
-  border-color: green;
-  
-  
-  
-} */
