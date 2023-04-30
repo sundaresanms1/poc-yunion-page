@@ -267,7 +267,7 @@ complete_process_button.addEventListener("click", function() {
  
 industry_preferences()
 make_progress1()
-window.location.href = "http://127.0.0.1:5500/Feed.html";
+window.location.href = "https://sundaresanms1.github.io/poc-yunion-page/Feed.html";
 
 
 });
