@@ -159,7 +159,9 @@ function reset_industry_active_colors() {
     //Check if the mobile number exists
   }
 
-FINALISED_INDUSTRY_OPTION = null;
+
+
+
 
 var industry_option1 = document.getElementById("industry-preference-1");
 var industry_option2 = document.getElementById("industry-preference-2");
@@ -173,7 +175,8 @@ var complete_process_button = document.getElementById("complete-signup-process")
 industry_option1.addEventListener("click", function() {
     // Perform an action when the button is clicked
 console.log("Industry Option 1!");
-FINALISED_INDUSTRY_OPTION = 1    
+let FINALISED_INDUSTRY_OPTION = "AGRO POST"    
+sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', FINALISED_INDUSTRY_OPTION);
 
 reset_industry_active_colors()
 document.getElementById("industry-preference-1").style.color = "#2cccc4";
@@ -189,7 +192,8 @@ document.getElementById("industry-preference-1").style.borderWidth = "6px";
 industry_option2.addEventListener("click", function() {
     // Perform an action when the button is clicked
 console.log("Industry Option 2!");
-FINALISED_INDUSTRY_OPTION = 2 
+let FINALISED_INDUSTRY_OPTION = "AQUA POST" 
+sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', FINALISED_INDUSTRY_OPTION);
 
 reset_industry_active_colors()
 document.getElementById("industry-preference-2").style.color = "#2cccc4";
@@ -204,7 +208,8 @@ document.getElementById("industry-preference-2").style.borderWidth = "6px";
 industry_option3.addEventListener("click", function() {
         // Perform an action when the button is clicked
 console.log("Industry Option 3!");
-FINALISED_INDUSTRY_OPTION = 3
+let FINALISED_INDUSTRY_OPTION = "TEXTILE POST"
+sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', FINALISED_INDUSTRY_OPTION);
 
 reset_industry_active_colors()
 document.getElementById("industry-preference-3").style.color = "#2cccc4";
@@ -219,7 +224,8 @@ document.getElementById("industry-preference-3").style.borderWidth = "6px";
 industry_option4.addEventListener("click", function() {
             // Perform an action when the button is clicked
 console.log("Industry Option 4!");
-FINALISED_INDUSTRY_OPTION = 4
+let FINALISED_INDUSTRY_OPTION = "SOLAR POST"
+sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', FINALISED_INDUSTRY_OPTION);
 
 reset_industry_active_colors()
 document.getElementById("industry-preference-4").style.color = "#2cccc4";

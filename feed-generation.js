@@ -3,6 +3,8 @@ resultdiv.empty();
 
 
 
+
+
 const postData = [
     {
       userName: "John Doe",
@@ -2252,7 +2254,13 @@ sample_feed = [
   }
 ]
 
+const preference = sessionStorage.getItem('FINALISED_INDUSTRY_OPTION');
+
+
 for (let i = 0; i < sample_feed.length; i++) {
+  
+  if (sample_feed[i]['description'] === preference) {
+
   let user_id = sample_feed[i].owner.id
   
   const attributes =  getAttributesById(user_id)
@@ -2266,7 +2274,7 @@ for (let i = 0; i < sample_feed.length; i++) {
 
   html_string = "<section class='u-border-1 u-border-palette-5-light-2 u-clearfix u-section-1' id='sec-62b2'> <div class='u-clearfix u-sheet u-sheet-1'> <div class='u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1'> <div class='u-layout'> <div class='u-layout-row'> <div class='u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-1'> <div class='u-container-layout u-container-layout-1'> <div alt='' class='u-image u-image-circle u-image-1' src='' data-image-width='256' data-image-height='256'></div> <h2 class='u-text u-text-custom-color-1 u-text-1'>"+USER_NAME+"</h2> <h4 class='u-text u-text-palette-5-base u-text-2'>" + USER_DESIGNATION +",&nbsp" + USER_LOCATION + "</h4> <p class='u-text u-text-4'>"+TEXT_CONTENT+"</p> <img class='u-expanded-width-xs u-image u-image-default u-image-2' src='images/e1cdcde96ec836523405e386294decb940c696b8be992e0e7726198c09bd16c58d58d3039475764ce34268cab08b63a89479f7a3f88083bc8a2af1_1280.jpg' alt='' data-image-width='1280' data-image-height='853'> </div> </div> </div> </div> </div> <p class='u-text u-text-default u-text-5'>"+NUM_COMMENTS+" <span class='u-file-icon u-icon u-icon-1'><img src='images/1380338.png' alt=''></span> </p> <p class='u-text u-text-default u-text-6'>"+NUM_LIKES + " <span class='u-file-icon u-icon u-icon-2' data-animation-name='' data-animation-duration='0' data-animation-delay='0' data-animation-direction=''><img src='images/126473.png' alt=''></span> </p> <a href='' class='u-btn u-btn-round u-button-style u-custom-color-1 u-radius-9 u-btn-1'><span class='u-file-icon u-icon u-icon-3'><img src='images/18.png' alt=''></span>&nbsp;Like </a> <a href='' class='u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-9 u-btn-2'><span class='u-file-icon u-icon u-text-white u-icon-4'><img src='images/1380338-a4aa210c.png' alt=''></span>&nbsp;Comment </a> <a href='' class='u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-9 u-btn-3'><span class='u-file-icon u-icon u-text-white u-icon-5'><img src='images/2958791-eda71ee5.png' alt=''></span>&nbsp;Share </a> <a href='' class='u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-9 u-btn-4'><span class='u-file-icon u-icon u-text-custom-color-4 u-icon-6'><img src='images/2107957-a8cee9a4.png' alt=''></span>&nbsp;Save </a> </div></section>"
   resultdiv.append(html_string)
-
+}
 }
 
 
@@ -3491,4 +3499,98 @@ function getAttributesById(id) {
   return null; // return null if the given ID is not found in the object
 }
 
+
+let AQUA_POST = ['fish farms',
+'shellfish farms',
+'shrimp farms',
+'seaweed farms',
+'aquaponics farms',
+'fish hatcheries',
+'fish feed manufacturers',
+'aquatic animal health providers',
+'equipment manufacturers',
+'processors and distributors',
+'aquatic plant nurseries',
+'aquaculture consultants',
+'aquaculture research institutions',
+'aquatic weed control companies',
+'aquatic animal transport companies',
+'aquatic education and training providers',
+'recirculating aquaculture systems (ras) providers',
+'aquaculture insurance providers',
+'aquaculture investment firms',
+'aquatic environmental monitoring companies',
+'aquatic animal feed suppliers',
+'aquatic farm management software providers',
+'aquatic waste management companies',
+'aquatic food processing companies',
+'aquatic product retailers',
+'aquatic technology providers',
+'aquatic certification and labeling organizations',
+'aquatic insurance brokers',
+'aquatic research vessel providers',
+'aquatic pest management companies']
+
+let SOLAR_POST = ['solar panel manufacturers',
+  'solar module manufacturers',
+  'solar cell manufacturers',
+  'solar inverter manufacturers',
+  'solar battery manufacturers',
+  'solar mounting system manufacturers',
+  'solar tracking system manufacturers',
+  'solar charge controller manufacturers',
+  'solar street light manufacturers',
+  'solar pump manufacturers',
+  'solar water heater manufacturers',
+  'solar air conditioner manufacturers',
+  'solar generator manufacturers',
+  'solar home system providers',
+  'solar microgrid providers',
+  'solar epc (engineering, procurement, and construction) companies',
+  'solar financing companies',
+  'solar insurance providers',
+  'solar asset management companies',
+  'solar o&m (operations and maintenance) companies',
+  'solar consulting firms',
+  'solar training and education providers',
+  'solar research institutions',
+  'solar advocacy organizations',
+  'solar project developers',
+  'solar project investors',
+  'solar energy aggregators',
+  'solar energy retailers',
+  'solar energy marketplaces',
+  'solar energy trading platforms']
+
+
+let  AGRO_POST = ['crop farmers',
+  'livestock farmers',
+  'dairy farmers',
+  'poultry farmers',
+  'aquaculture farmers',
+  'greenhouse farmers',
+  'hydroponic farmers',
+  'vertical farming companies',
+  'organic farming companies',
+  'sustainable farming companies',
+  'precision farming companies',
+  'agrochemical manufacturers',
+  'fertilizer manufacturers',
+  'seed manufacturers',
+  'agricultural machinery manufacturers',
+  'irrigation equipment manufacturers',
+  'farm management software providers',
+  'agro-product distributors',
+  'agro-product exporters',
+  'agro-product importers',
+  'agro-product processors',
+  'agro-product packagers',
+  'agricultural logistics providers',
+  'agricultural financing companies',
+  'agricultural insurance providers',
+  'agricultural consulting firms',
+  'agricultural research institutions',
+  'agricultural training and education providers',
+  'agricultural advocacy organizations',
+  'agricultural marketing firms']
 

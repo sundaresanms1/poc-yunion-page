@@ -27,12 +27,17 @@ function otp_check() {
   // switch to Feed
   if (user == "user123") {
     if (otp == 9999) {
+
+      sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', "AQUA POST");
+      // window.location.href = "http://127.0.0.1:5500/Feed.html" 
       window.location.href = "https://sundaresanms1.github.io/poc-yunion-page/Feed.html";
     } else {
       console.log("Incorrect OTP");
     }
   } else {
     console.log("This number doesn't exist on our platform, please register");
+
+    sessionStorage.setItem('FINALISED_INDUSTRY_OPTION', "AQUA POST");
 
     window.location.href = "https://sundaresanms1.github.io/poc-yunion-page/Register.html";
   }
